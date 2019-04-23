@@ -1,0 +1,17 @@
+.itemPosicao {
+  text-align: center;
+}
+ion-content {
+    background-color :#424651 !important;
+    color: white !important;
+    font-family: 'Lato', sans-serif;
+}
+ion-content {
+    background-image: none;
+}
+img{
+  width: 35%;
+}
+ion-slide{
+  padding:10%;
+}

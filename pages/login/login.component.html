@@ -1,0 +1,22 @@
+<ion-content>
+  <form #form="ngForm" (submit)="login(form)">
+    
+    <ion-list>
+      
+      <ion-item>
+        <ion-label stacked>E-mail</ion-label>
+        <ion-input type="email" name="email" ngModel></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Senha</ion-label>
+        <ion-input type="password" name="senha" ngModel></ion-input>
+      </ion-item>
+      
+      <button ion-button block color="primary">Entrar</button>
+      <button ion-button block (click)="cadastrar()" outline color="primary" type="button">Cadastrar</button>
+
+    </ion-list>
+
+  </form>
+</ion-content>

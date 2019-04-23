@@ -1,0 +1,45 @@
+<ion-content class="conteudo">
+      <ion-slides paginationClickable=true
+                  initialSlide=0
+                  loop=true
+                  #mySlider>
+ 
+        <ion-slide >
+            <h2>Olá, seja bem vindo no BusqueEventos</h2>
+          <img src="https://firebasestorage.googleapis.com/v0/b/busqueeventos-fd0dd.appspot.com/o/sistema%2Flogo%2Flogo-azul-claro.png?alt=media&token=4734e39c-1e91-4243-ae0d-334b027c6a22">
+          <h5>
+            
+          </h5>
+          
+        </ion-slide>
+        
+        <ion-slide >
+          <h2>Sobre o Aplicativo</h2>
+          <img src="https://firebasestorage.googleapis.com/v0/b/busqueeventos-fd0dd.appspot.com/o/sistema%2Ficones%2Fhelp.png?alt=media&token=6f038a1b-3cff-4129-8bf8-a885993edf11">
+          <h5>
+            O 'BusqueEventos' é uma plataforma que tem como objetivo divulgar atividades de ensino, pesquisa e extensão que estão ocorrendo em todo território nacional.
+          </h5>
+          <h5>
+            As atividades que podem ser cadastradas são: eventos, palestras, simpósios, mini cursos ou cultirais. 
+          </h5>
+          <h5>
+            Além disso é importante indicar o local heim ;).
+          </h5>
+        </ion-slide>
+
+        <ion-slide >
+            <h2>Não perde tempo e vem ser membro</h2>
+          <img src="https://firebasestorage.googleapis.com/v0/b/busqueeventos-fd0dd.appspot.com/o/sistema%2Ficones%2Ffesta.png?alt=media&token=379fff8f-9d13-494d-98bd-ade9730ba2a2">
+          <h4>
+            Cadastre-se no App, é grátis! 
+          </h4>
+          <h5>Além de cadastrar e ser informado sobre os eventos, você também recebe alerta de interesse.
+          </h5>
+          <button ion-button (click)="login()" >Vamos lá!</button>
+        </ion-slide>
+      </ion-slides>
+      
+      <div class="swiper-button-next swiper-button-white" *ngIf="contador!=2" (click)="slideNext()"></div>
+      <div class="swiper-button-prev swiper-button-white" *ngIf="contador!=0" (click)="slidePrev()"></div>
+ 
+</ion-content>
